@@ -3,6 +3,12 @@ build:
     steps:
         - setup-go-workspace
         - script:
+            name: go dependencies
+            code: go get ./...
+        - script:
+            name: go tests
+            code: go test ./...
+        - script:
             code: echo "okay, done."
 deploy:
     steps:
