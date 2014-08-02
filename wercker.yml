@@ -6,7 +6,7 @@ build:
             code: echo "okay, done."
 deploy:
     steps:
-        - joshuamckenty/cloud-foundry-deploy@0.0.5:
+        - joshuamckenty/cloud-foundry-deploy@0.0.6:
             organization: beanpatch
             space: development
             appname: gocf
