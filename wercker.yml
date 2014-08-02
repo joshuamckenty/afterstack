@@ -1,12 +1,12 @@
 box: wercker/golang
 build:
-  steps:
-    - setup-go-workspace
-    - script:
-        code: echo "okay, done."
+    steps:
+        - setup-go-workspace
+        - script:
+            code: echo "okay, done."
 deploy:
-  steps:
-    - joshuamckenty/cloud-foundry-deploy@0.0.5:
-      organization: beanpatch
-      space: development
-      appname: gocf
+    steps:
+        - joshuamckenty/cloud-foundry-deploy@0.0.5:
+            organization: beanpatch
+            space: development
+            appname: gocf
