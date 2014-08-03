@@ -13,6 +13,4 @@ build:
 deploy:
     steps:
         - joshuamckenty/cloud-foundry-deploy:
-            organization: beanpatch
-            space: development
             appname: gocf
