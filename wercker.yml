@@ -3,7 +3,7 @@ build:
     steps:
         - setup-go-workspace
         - script:
-            code: go get github.com/tools/godep
+            code: go get github.com/tools/godep && go get ./...
         - script:
             name: go dependencies
             code: godep go install ./...
