@@ -12,5 +12,4 @@ build:
             code: echo "okay, done."
 deploy:
     steps:
-        - joshuamckenty/cloud-foundry-deploy:
-            appname: gocf
+        - joshuamckenty/cloud-foundry-deploy
