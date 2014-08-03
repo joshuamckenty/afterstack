@@ -5,4 +5,4 @@ applications:
   instances: 1
   url: gocf.cfapps.io
   path: .
-  #buildpack: git://github.com/hmalphettes/heroku-buildpack-go.git
+  buildpack: https://github.com/cloudfoundry/buildpack-go.git
