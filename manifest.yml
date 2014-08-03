@@ -3,6 +3,6 @@ applications:
 - name: gocf
   memory: 64M
   instances: 1
-  domain: cfapps.io
+  domain: afterstack.com
   path: .
   buildpack: git://github.com/hmalphettes/heroku-buildpack-go.git
