@@ -3,15 +3,11 @@ build:
     steps:
         - setup-go-workspace
         - script:
-            code: go get github.com/tools/godep
-        - script:
             name: go dependencies
-            code: godep go build ./... && godep go install ./...
+            code: go get ./...
         - script:
             name: go tests
-            code: godep go test ./...
-        - script:
-            code: echo "okay, done."
+            code: go install ./... && go test ./...
 deploy:
     steps:
         - joshuamckenty/cloud-foundry-deploy

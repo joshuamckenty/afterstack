@@ -3,6 +3,6 @@ applications:
 - name: gocf
   memory: 64M
   instances: 1
-  url: gocf.cfapps.io
+  domain: cfapps.io
   path: .
-  buildpack: https://github.com/cloudfoundry/buildpack-go.git
+  buildpack: git://github.com/hmalphettes/heroku-buildpack-go.git
