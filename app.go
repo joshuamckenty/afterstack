@@ -18,5 +18,5 @@ func main() {
 }
 
 func hello() string {
-    return "hello, martini! v2."
+    return "hello, Cerner!"
 }
